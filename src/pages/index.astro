@@ -3,22 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Button from '../components/Button';
 import BuyList from '../components/BuyList.tsx';
-
-const buyList = [
-	'Controller',
-	'Bread',
-	'Water', 
-	'NoteBook',
-	'Math Book',
-	'Choco Bar',
-	'Milk'
-	]
+import Cars from '../components/Cars.tsx';
 ---
 <div class="cont">
-	<h1>Compras de la Semana </h1>
-	<BuyList {buyList} />
+	 <Cars/>
 </div>
-
 
 <style>
 .cont {
@@ -28,11 +17,6 @@ const buyList = [
 	justify-content: center; 
 	height: 100vh; 
 }
-h1{
-	font-size: 40px; 
-	font-family: Arial, sans-serif;
-}
-
 </style>
 
 
